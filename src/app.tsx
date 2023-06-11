@@ -1,5 +1,6 @@
 import React from 'react';
-import { Space, Typography } from 'antd';
+import { Typography } from 'antd';
+
 import one from './assets/1.jpeg';
 import two from './assets/2.jpeg';
 import three from './assets/3.jpeg';
@@ -18,6 +19,18 @@ const App = () => {
   return (
     <>
       <Title>谭景秋病历</Title>
+      <ul>
+        <li>左腿肿胀。稍微弯曲、触碰、用力什么的就会痛。</li>
+        <li>输液 利福平 和 异烟丙 治疗了11天了。</li>
+        <li>抽出了很多积液，肿也消了很多。但是还有肿胀和积液。</li>
+        <li>邯郸市第一医院通过积液化验出来有结核，但是拍片子看不出来有没有。</li>
+      </ul>
+      <Title level={2}>患者疑问</Title>
+      <ol>
+        <li>如何确定膝盖中是否有结核？除了积液化验还有其它办法吗？</li>
+        <li>做 PET-CT 是否有必要？是否对诊断结核有帮助？</li>
+        <li>建议保守治疗还是手术治疗？</li>
+      </ol>
       <div>
         <Title level={2}>1</Title>
         <img src={one} className="rotate-image" />
