@@ -5,7 +5,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "lint": "eslint --fix '**/*.{ts,tsx,js,jsx}' && prettier --write . && sort-package-json",
-    "serve": "parcel src/index.html --dist-dir docs",
+    "serve": "rm -rf .parcel-cache && rm -rf docs && parcel src/index.html --dist-dir docs",
     "release": "rm -rf docs && parcel build src/index.html --dist-dir docs --public-url ./"
   },
   "devDependencies": {

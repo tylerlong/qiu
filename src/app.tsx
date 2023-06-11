@@ -1,6 +1,10 @@
 import React from 'react';
 import { Typography } from 'antd';
 
+import dotOne from './assets/0.1.jpeg';
+import dotTwo from './assets/0.2.jpeg';
+import dotThree from './assets/0.3.jpeg';
+import dotFour from './assets/0.4.jpeg';
 import one from './assets/1.jpeg';
 import two from './assets/2.jpeg';
 import three from './assets/3.jpeg';
@@ -32,27 +36,20 @@ const App = () => {
         <li>建议保守治疗还是手术治疗？</li>
       </ol>
       <div>
-        <Title level={2}>1</Title>
+        <img src={dotOne} />
+        <img src={dotTwo} />
+        <img src={dotThree} />
+        <img src={dotFour} />
         <img src={one} className="rotate-image" />
-        <Title level={2}>2</Title>
         <img src={two} className="rotate-image" />
-        <Title level={2}>3</Title>
         <img src={three} className="rotate-image" />
-        <Title level={2}>4</Title>
         <img src={four} className="rotate-image" />
-        <Title level={2}>5</Title>
         <img src={five} className="rotate-image" />
-        <Title level={2}>6</Title>
         <img src={six} className="rotate-image" />
-        <Title level={2}>7</Title>
         <img src={seven} className="rotate-image" />
-        <Title level={2}>8</Title>
         <img src={eight} className="rotate-image" />
-        <Title level={2}>9</Title>
         <img src={nine} />
-        <Title level={2}>10</Title>
         <img src={ten} />
-        <Title level={2}>11</Title>
         <img src={eleven} />
       </div>
     </>
